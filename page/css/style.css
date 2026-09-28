@@ -1,0 +1,218 @@
+
+@font-face {
+    font-family: "Futura";
+    src: url("../../fonts/futura medium bt.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    
+    font-family: "Futura Condensed";
+    src: url("../../fonts/futura medium condensed bt.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 70px 20px;
+    background-color: #464649;
+    font-family: "Futura", Arial, sans-serif;
+    font-weight: 500;
+}
+
+
+input,
+button,
+.error-message {
+    font-family: "Futura Condensed", Arial, sans-serif;
+    font-weight: 500;
+}
+
+
+.form-container h1,
+.users-container h2,
+.users-table th {
+    font-weight: 500;
+}
+
+
+.container {
+    width: 970px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 370px 1fr;
+    background-color: white;
+}
+
+
+
+.form-container {
+    background-color: white;
+}
+
+
+.form-container h1 {
+    margin: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2da7cf;
+    color: white;
+    font-size: 24px;
+}
+
+
+
+form {
+    padding: 48px 28px;
+}
+
+
+
+.name-row{
+    display: flex;
+    gap: 28px;
+    margin-bottom: 24px;
+
+}
+
+
+
+input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 24px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #dbe1e4;
+    font-size: 16px;
+    outline: none;
+}
+
+input::placeholder{
+    color: #83878a;
+}
+
+
+
+button{
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2da7cf;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #1f93bd;
+}
+
+
+
+.map-container{
+    min-width: 0;
+    display: flex;
+}
+
+
+#map {
+    width: 100%;
+    min-height: 500px;
+    background-color: #e0e0e0;
+}
+
+
+.name-row input{
+    margin-bottom: 0;
+}
+
+
+.error-message{
+    display:block;
+    min-height: 15px;
+    line-height: 15px;
+    margin-bottom: 2px;
+    color: red;
+    font-size: 12px;
+}
+
+
+.error-message[hidden]{
+    display: block;
+    visibility: hidden;
+}
+
+
+input.input-error{
+    background-color: #ff7080;
+    color: white;
+}
+
+
+input.input-error::placeholder{
+    color:white;
+}
+
+
+input:focus-visible{
+    outline: 2px solid #167c9e;
+    outline-offset: 2px;
+}
+
+
+.users-container {
+    width: 970px;
+    max-width: 100%;
+    margin: 24px auto 0;
+    padding: 24px;
+    background-color: white;
+}
+
+
+.users-container h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+
+.users-table-scroll {
+    overflow-x: auto;
+}
+
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+
+.users-table th,
+.users-table td {
+    padding: 12px;
+    border-bottom: 1px solid #dbe1e4;
+    overflow-wrap: anywhere;
+}
+
+
+.users-table th {
+    background-color: #2da7cf;
+    color: white;
+}
